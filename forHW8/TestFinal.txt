@@ -1,0 +1,104 @@
+Script started on Thu 13 Dec 2018 02:39:51 PM PST
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW8[?1034h[alshu002@empress forHW8]$ emacs elemFinal.[1Phtable.cpw8client.c[3Ptable.cpw8client.c[3Ptable.cp[2Pcls./a.ouls./a.oulsemacs htable.cp[2Pcpw8client.c[3Ptable.cpw8client.c[3Ptable.celemFinal..h[Kg++ clientFinal.cpp llist.cpp slist.cpp elemFinal.cpp htable.cpp
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW8[alshu002@empress forHW8]$ ./a.out
+How many passwords do you want to add? 5
+1: Enter the password: 0414
+1: Enter the website or email for this password: IphoneLoacck
+2: Enter the password: 12340987
+2: Enter the website or email for this password: CougarsCourceses
+3: Enter the password: 3856
+3: Enter the website or email for this password: ChaseCard
+4: Enter the password: 369963
+4: Enter the website or email for this password: google
+5: Enter the password: 47362
+5: Enter the website or email for this password: Netflix
+0:[ 369963-->google ]
+1:[ Empty ]
+2:[ 47362-->Netflix ]
+3:[ Empty ]
+4:[ Empty ]
+5:[ Empty ]
+6:[ Empty ]
+7:[ 414-->IphoneLock 12340987-->CougarsCourses ]
+8:[ 3856-->ChaseCard ]
+9:[ Empty ]
+10:[ Empty ]
+11:[ Empty ]
+12:[ Empty ]
+13:[ Empty ]
+14:[ Empty ]
+15:[ Empty ]
+16:[ Empty ]
+17:[ Empty ]
+18:[ Empty ]
+19:[ Empty ]
+20:[ Empty ]
+21:[ Empty ]
+22:[ Empty ]
+23:[ Empty ]
+24:[ Empty ]
+25:[ Empty ]
+26:[ Empty ]
+27:[ Empty ]
+28:[ Empty ]
+29:[ Empty ]
+30:[ Empty ]
+31:[ Empty ]
+32:[ Empty ]
+33:[ Empty ]
+34:[ Empty ]
+35:[ Empty ]
+36:[ Empty ]
+
+If you don't want to look for n password press 0, else press any number: 1
+look for? 0414
+Found 414: 414-->IphoneLock
+if you want to exit press 0, else press any number: 1
+look for? 12340987
+Found 12340987: 12340987-->CougarsCourses
+if you want to exit press 0, else press any number: 1
+look for? 0173
+173 not found.
+: To add it to your list pleasr enter the website or email for this password: twitter
+if you want to exit press 0, else press any number: 0
+0:[ 369963-->google ]
+1:[ Empty ]
+2:[ 47362-->Netflix ]
+3:[ Empty ]
+4:[ Empty ]
+5:[ Empty ]
+6:[ Empty ]
+7:[ 414-->IphoneLock 12340987-->CougarsCourses ]
+8:[ 3856-->ChaseCard ]
+9:[ Empty ]
+10:[ Empty ]
+11:[ Empty ]
+12:[ Empty ]
+13:[ Empty ]
+14:[ Empty ]
+15:[ Empty ]
+16:[ Empty ]
+17:[ Empty ]
+18:[ Empty ]
+19:[ Empty ]
+20:[ Empty ]
+21:[ Empty ]
+22:[ Empty ]
+23:[ Empty ]
+24:[ Empty ]
+25:[ 173-->twitter ]
+26:[ Empty ]
+27:[ Empty ]
+28:[ Empty ]
+29:[ Empty ]
+30:[ Empty ]
+31:[ Empty ]
+32:[ Empty ]
+33:[ Empty ]
+34:[ Empty ]
+35:[ Empty ]
+36:[ Empty ]
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW8[alshu002@empress forHW8]$ exit
+exit
+
+Script done on Thu 13 Dec 2018 02:44:46 PM PST

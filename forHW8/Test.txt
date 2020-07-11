@@ -1,0 +1,115 @@
+Script started on Tue 20 Nov 2018 11:22:34 PM PST
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW8[?1034h[alshu002@empress forHW8]$ emacs htable.cp[2[1Pllist.htable[2Pelemslist.cp[1Pelem.cslist.cp[2Pcphw8client.cp[5Pelem.c hw8output.t[4Phtable.c[2Pelem.cp[2slist.cp @@read-[1Pslist.cp @@read-[3Pslist.llist. @@read-[3Pllist.slist. @@read-[1Pslist.cp @@read-[1Pslist.cp[3Pelem.chtable.c hw8output.t[6Pelem.chw8client.cp[4Pslist.cp[2Pcp[1Pelem.cslist.cp[3Pelemhtable[1Pllist.htable.c[K g++ hw8client.cpp llist.cpp slist.cpp htable.cpp elem.cpp
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW8[alshu002@empress forHW8]$ ./a.out
+1: Enter the key: 123
+1: Enter the string: Abdullah
+2: Enter the key: 453
+2: Enter the string: Noah
+3: Enter the key: 465
+3: Enter the string: James
+4: Enter the key: 200
+4: Enter the string: Rika
+5: Enter the key: 354
+5: Enter the string: Lucas
+6: Enter the key: 835
+6: Enter the string: Maryah
+7: Enter the key: 436
+7: Enter the string: Alex
+8: Enter the key: 950
+8: Enter the string: Henery
+9: Enter the key: 765
+9: Enter the string: David
+10: Enter the key: 85345
+10: Enter the string: Owen
+11: Enter the key: 999
+11: Enter the string: Gina
+12: Enter the key: 107
+12: Enter the string: Eryn
+13: Enter the key: 888
+13: Enter the string: Bob
+14: Enter the key: 449
+14: Enter the string: Willis
+15: Enter the key: 556
+15: Enter the string: Kim
+16: Enter the key: 597
+16: Enter the string: Emily
+17: Enter the key: 991
+17: Enter the string: Mia
+18: Enter the key: 666
+18: Enter the string: Summer
+19: Enter the key: 111
+19: Enter the string: Ava
+20: Enter the key: 735
+20: Enter the string: Amy
+0:[ 999+Gina 888+Bob 666+Summer 111+Ava ]
+1:[ 556+Kim ]
+2:[ Empty ]
+3:[ Empty ]
+4:[ Empty ]
+5:[ 449+Willis 597+Emily ]
+6:[ Empty ]
+7:[ Empty ]
+8:[ Empty ]
+9:[ 453+Noah ]
+10:[ Empty ]
+11:[ Empty ]
+12:[ 123+Abdullah 345+Owen ]
+13:[ Empty ]
+14:[ Empty ]
+15:[ 200+Rika ]
+16:[ Empty ]
+17:[ Empty ]
+18:[ Empty ]
+19:[ Empty ]
+20:[ Empty ]
+21:[ 465+James 354+Lucas 835+Maryah ]
+22:[ Empty ]
+23:[ Empty ]
+24:[ Empty ]
+25:[ 950+Henery 765+David ]
+26:[ Empty ]
+27:[ Empty ]
+28:[ Empty ]
+29:[ 436+Alex 991+Mia ]
+30:[ Empty ]
+31:[ Empty ]
+32:[ 735+Amy ]
+33:[ 107+Eryn ]
+34:[ Empty ]
+35:[ Empty ]
+36:[ Empty ]
+
+If you don't want to look for an element press 0, else press any number: 1
+look for? 999
+Found 999: 999+Gina
+look for? 354
+Found 354: 354+Lucas
+look for? 765
+Found 765: 765+David
+look for? 243
+243 not found.
+look for? 107
+Found 107: 107+Eryn
+look for? 200
+Found 200: 200+Rika
+look for? 14
+14 not found.
+look for? 165
+165 not found.
+look for? 123
+Found 123: 123+Abdullah
+look for? 666
+Found 666: 666+Summer
+look for? 835
+Found 835: 835+Maryah
+look for? 111
+Found 111: 111+Ava
+look for? 998
+998 not found.
+look for? 0
+0 not found.
+look for? ^X^C
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW8[alshu002@empress forHW8]$ exit
+exit
+
+Script done on Tue 20 Nov 2018 11:31:18 PM PST

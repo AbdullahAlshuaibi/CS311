@@ -1,0 +1,65 @@
+//============================================
+// HW#: HW8 hashing client
+// Name: Abdullah Alshuaibi
+// File type: client hw8client.cpp
+//===========================================
+
+using namespace std;
+#include <iostream>
+#include "htable.h"
+
+int main()
+{ 
+  htable H; //htable object
+
+  int K; //a digit from the user
+  string S; //string name the user
+
+  cout<<"How many passwords do you want to add? ";
+  int p;
+  cin >>p;
+  for(int i=1; i<=p; i++) //getting information from the user
+    {
+      cout<<i<<": Enter the password: ";
+      cin>>K;
+      cout<<i<<": Enter the website or email for this password: ";
+      cin>>S;
+
+      el_t elem(K, S);
+      H.add(elem); //adding the digit and the name to the table 
+    }
+
+  H.displayTable();
+
+  int F;
+  cout<<endl<<"If you don't want to look for n password press 0, else press any number: ";
+  cin>>F;
+
+  while(F != 0)
+    {
+      cout<<"look for? ";
+      int Look;
+      cin>>Look;
+
+      el_t blank;
+
+      if(H.find(Look) == blank) //if both equal, means the element isn't found because find() will return blank
+	{ cout<<Look<<" not found."<<endl;
+	  cout<<": To add it to your list pleasr enter the website or email for this password: ";
+	  cin>>S;
+	  el_t elem(Look, S);
+	  H.add(elem); //adding the digit and the name to the table
+	}
+
+      else //if they are different, element found 
+	{
+	  cout<<"Found "<<Look<<": "<<H.find(Look)<<endl;
+	}
+
+      cout<<"if you want to exit press 0, else press any number: ";
+      cin>>F;
+    }
+  H.displayTable();
+
+
+}
