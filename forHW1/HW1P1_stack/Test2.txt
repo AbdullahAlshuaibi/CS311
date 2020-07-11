@@ -1,0 +1,219 @@
+Script started on Thu 06 Sep 2018 02:29:01 PM PDT
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[?1034h[alshu002@empress HW1P1_stack]$ emacs client1.cplscd HW1P1_stalscd forHWlscd forHWlscd HW1P1_stalsemacs client1.cp[Kemacs client1.cplscd HW1P1_stalscd forHWlscd HWProgramlscd CS311Proglscd cs311lsemacs stacktest.cplsemacs client1.cp[2Pstack.cp[2Plscd HW1P1_stalscd forHWlscd HWProgramlscd CS311Proglscd cs311lsemacs client1.cp[2Pstack.cp[2Plsemacs stack.cpclient1.cplscd cs311lscd CS311Proglscd HWProgramlscd forHWlscd HW1P1_stalsemacs stack.cpclient1.cplsemacs stacktest.cplscd cs311lscd CS311Proglscd HWProgramlscd forHWlscd HW1P1_stalsemacs client1.cp[Kemacs client1.cplscd HW1P1_stalscd forHWlscd HW1P1_stalsemacs client1.c[1Pclient1.c[1Pclient1.cp[1Plient1.c[1Pclient1.c[1Pclient1.c[1Pclient1.cpgclient1.cp+client1.cp+client1.cp client1.cp[C[C[C[C[C[C[C[C[C[C[C stack.cpp
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 34+
+3
+--------------
+4
+3
+--------------
+7
+--------------
+[ empty ]
+the answer is 7
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ 345+*
+bash: 345+*: command not found
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ 345+./a.oug++ client1.cpp stack.cp./a.out[K
+type a postfix expression: 345+*
+3
+--------------
+4
+3
+--------------
+5
+4
+3
+--------------
+9
+3
+--------------
+27
+--------------
+[ empty ]
+the answer is 27
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 722+-
+7
+--------------
+2
+7
+--------------
+2
+2
+7
+--------------
+4
+7
+--------------
+3
+--------------
+[ empty ]
+the answer is 3
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 34+56++
+3
+--------------
+4
+3
+--------------
+7
+--------------
+5
+7
+--------------
+6
+5
+7
+--------------
+11
+7
+--------------
+18
+--------------
+[ empty ]
+the answer is 18
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 12+34*45+-+
+1
+--------------
+2
+1
+--------------
+3
+--------------
+3
+3
+--------------
+4
+3
+3
+--------------
+12
+3
+--------------
+4
+12
+3
+--------------
+5
+4
+12
+3
+--------------
+9
+12
+3
+--------------
+3
+3
+--------------
+6
+--------------
+[ empty ]
+the answer is 6
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 1234567891234
+1
+--------------
+2
+1
+--------------
+3
+2
+1
+--------------
+4
+3
+2
+1
+--------------
+5
+4
+3
+2
+1
+--------------
+6
+5
+4
+3
+2
+1
+--------------
+7
+6
+5
+4
+3
+2
+1
+--------------
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+1
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+expression too long
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: +
+too few operands
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 3+
+3
+--------------
+too few operands
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 3#
+3
+--------------
+Invalid Elemnt
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 2345+
+2
+--------------
+3
+2
+--------------
+4
+3
+2
+--------------
+5
+4
+3
+2
+--------------
+9
+3
+2
+--------------
+an incomplete expression
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW1/HW1P1_stack[alshu002@empress HW1P1_stack]$ exit
+exit
+
+Script done on Thu 06 Sep 2018 02:31:30 PM PDT
