@@ -1,0 +1,116 @@
+Script started on Wed 07 Nov 2018 04:11:33 PM PST
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW6[?1034h[alshu002@empress forHW6]$ g++ hw6client.cpp llist.cpp slist.cpp dgraph.cpp
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW6[alshu002@empress forHW6]$ ./a.out
+A 2 0 [ B F ] 2 elemnts
+B 2 0 [ C G ] 2 elemnts
+C 1 0 [ H ] 1 elemnts
+D 0 0 [ Empty ]
+E 0 0 [ Empty ]
+F 2 0 [ I E ] 2 elemnts
+G 0 0 [ Empty ]
+H 2 0 [ G I ] 2 elemnts
+I 3 0 [ A G E ] 3 elemnts
+Enter a vertex name or 0 to exit: A
+2 edges comes out to.
+calling the llist destructor
+[ B F ] 2 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: B
+2 edges comes out to.
+calling the llist destructor
+[ C G ] 2 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: C
+1 edges comes out to.
+calling the llist destructor
+[ H ] 1 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: D
+0 edges comes out to.
+calling the llist destructor
+[ Empty ]
+calling the llist destructor
+Enter a vertex name or 0 to exit: E
+0 edges comes out to.
+calling the llist destructor
+[ Empty ]
+calling the llist destructor
+Enter a vertex name or 0 to exit: F
+2 edges comes out to.
+calling the llist destructor
+[ I E ] 2 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: G
+0 edges comes out to.
+calling the llist destructor
+[ Empty ]
+calling the llist destructor
+Enter a vertex name or 0 to exit: H
+2 edges comes out to.
+calling the llist destructor
+[ G I ] 2 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: I
+3 edges comes out to.
+calling the llist destructor
+[ A G E ] 3 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: M
+no such vertex exists
+
+Enter a vertex name or 0 to exit: X
+no such vertex exists
+
+Enter a vertex name or 0 to exit: Z
+no such vertex exists
+
+Enter a vertex name or 0 to exit: a
+no such vertex exists
+
+Enter a vertex name or 0 to exit: b
+no such vertex exists
+
+Enter a vertex name or 0 to exit: 2
+no such vertex exists
+
+Enter a vertex name or 0 to exit: 3
+no such vertex exists
+
+Enter a vertex name or 0 to exit: 5
+no such vertex exists
+
+Enter a vertex name or 0 to exit: F
+2 edges comes out to.
+calling the llist destructor
+[ I E ] 2 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: A
+2 edges comes out to.
+calling the llist destructor
+[ B F ] 2 elemnts
+calling the llist destructor
+Enter a vertex name or 0 to exit: 0
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+calling the llist destructor
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW6[alshu002@empress forHW6]$ exit
+exit
+
+Script done on Wed 07 Nov 2018 04:12:57 PM PST

@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+void dgraph::fillTable()  // be sure to read from a file
+{
+  ifstream fin;
+
+  fin.open("table.txt");
+
+  for(int i=0; i<9; i++)
+    {
+      fin>>Gtable[i].vertexName;
+      fin>>Gtable[i].outDegree;
+      int outD = Gtable[i].outDegree;
+      for(int ii=0; ii<outD; i++)
+        {
+          char adj;
+          fin>>adj;
+          Gtable[i].adjacentOnes.addRear(adj);
+        }
+    }
+}
