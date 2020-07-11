@@ -1,0 +1,270 @@
+
+
+using namespace std;
+#include "llist.h"
+#include<iostream>
+
+llist::llist()
+{
+  Front = NULL;
+  Rear = NULL;
+  Count = 0;
+    
+}
+
+llist::~llist()
+{
+  cout<<"calling the llist destructor"<<endl;
+  el_t deletItem;
+  while (!isEmpty())
+    {deleteFront(deletItem);}
+}
+
+//PURPOSE: return true if Front and Rear are both pointing to NULL and Count is 0.
+//PARAMETER:
+bool llist::isEmpty()
+{
+  if(Front == NULL && Rear == NULL && Count == 0)
+    return true;
+  else
+    return false;
+}
+//PURPOSE: display each element of the list starting from Front, enclosed in  [ ] followed by Count and  endl.
+//(special case: if the list is empty, display [ empty ] ).
+//PARAMETER:
+void llist::displayAll()
+{
+  Node *P; //temp node in order to not change front
+  if(isEmpty()) //if empty
+    cout<<"[ Empty ]"<<endl;
+  else //if not empty
+    {
+      P = Front; //p points to front's node
+      cout<<"[ ";
+      while(P!= NULL) // when P is pointing to a node
+        {
+	  cout<<P->Elem<<" "; // output elem in the node
+	  P=P->Next;          // p points to next node
+        }
+      cout<<"] "<<Count<<" elemnts"<<endl;
+      // Push down
+    }
+    
+}
+
+//PURPOSE: special case: if this is going to be the very first node, you must create a new node and make Front and Rear point to it. Put NewNum in the Elem field of this new node. Count is updated.
+//regular case:  add a new node at the rear and puts NewNum in the Elem field of this new node. Count is updated.
+
+//PARAMETER: NewNum: the element added to the rear node
+void llist::addRear(el_t NewNum)
+{
+  if(isEmpty()) //special case (this is going to be the very first node (i.e. currently empty)
+    {
+      Front = new Node;   //Front points to a new node
+      Rear = Front;       //Rear points to the same node
+      Front->Elem = NewNum;  //put the newElem in rear node
+      Rear->Next = NULL;   // no other nodes
+      Count++;             // one more element is added.
+    }
+  else //adds a new node at the rear and puts newElem in the Elem field of this new node.
+    {
+      Rear->Next = new Node; // make the rear node point to a new node
+      Rear = Rear->Next;     // rear points to the new one
+      Rear->Elem = NewNum;   // put newElem in the new one
+      Rear->Next = NULL;     // new ones points to nothing yet
+      Count++;                 // one more element is added.
+    }
+}
+
+//PURPOSE: special case: if this is going to be the very first node, you must create a new node and make Front and Rear point to it. Put NewNum in the Elem field of this new node. Count is updated.
+//regular case:  add a new node at the front and puts NewNum in the Elem field of this new node. Count is updated.
+//PARAMETER: NewNum: the element added to the front node
+void llist::addFront(el_t NewNum)
+{
+  if(isEmpty())
+    {
+      Front = new Node;   //Front points to a new node
+      Rear = Front;       //Rear points to the same node
+      Front->Elem = NewNum;  //put the newElem in rear node
+      Rear->Next = NULL;  // no other nodes
+      Count++;             // one more element is added.
+    }
+  else
+    {
+      Node *P;//decleration Numx as a node
+      P = new Node;    //numX pinting to the new node
+      P->Next = Front;
+      P->Elem = NewNum;  //stor the element in the new node
+      Front = P;       //Front becomes the new node
+      Count++;            // one more element is added.
+    }
+    
+}
+
+//PURPOSE: error case: if the List is empty, throw an exception.
+//special case: if this is going to make the list empty, give back the front node element through OldNum (pass by reference) and also remove the front node. Count is updated. Make sure both Front and Rear both become NULL.
+//regular case:  give back the front node element through OldNum (pass by reference) and also remove the front node. Count is updated.
+//PARAMETER: OldNum: The element that is removed from front node, and it's passed by reference to the client
+void llist::deleteFront(el_t& OldNum)
+{
+  if(isEmpty())
+    {
+      throw Underflow();
+    }
+  else if(Count == 1)
+    {
+      OldNum = Front->Elem;
+      delete Front;
+      Front = NULL;
+      Rear = NULL;
+      Count = 0;
+    }
+  else
+    {
+      OldNum = Front->Elem;
+      Node *Second;
+      Second = Front->Next;
+      delete Front;
+      Front = Second;
+      Count--;
+    }
+}
+//PURPOSE: error case: if empty, throw an exception.
+//special case: if this is going to make the list empty, give back the rear node element through OldNum (pass by reference) and also remove the rear node. Count is updated. Make sure both Front and Rear become NULL).
+//regular case: give back the rear node element through OldNum (pass by reference) and also remove the rear node. Count is updated.
+
+//PARAMETER: OldNum: The element that is removed from rear node, and it's passed by reference to the client
+void llist::deleteRear(el_t& OldNum)
+{
+  if(isEmpty())
+    {
+      throw Underflow();
+    }
+  else if(Count == 1)
+    {
+      OldNum = Rear->Elem;
+      delete Rear;
+      Front = NULL;
+      Rear = NULL;
+      Count = 0;
+    }
+  else
+    {
+      OldNum = Rear->Elem;
+      Node *Prev;
+      Prev = Front;
+      while(Prev->Next != Rear)
+	Prev = Prev->Next;
+        
+      delete Rear;
+      Rear = Prev;
+      Rear->Next = NULL;
+      Count--;
+    }
+}
+
+//PURPOSE: Error cases: If I is an illegal value (i.e. > Count or < 1) throw an exception.
+//Special cases: this should simply call deleteFront (I = 1) or deleteRear (I == Count) for some cases.
+//Regular case: will delete the Ith node (I starts out at 1).  Count is updated.
+//PARAMETER: OldNum: The element that is removed from Ith node, and it's passed by reference to the client
+void llist::deleteIth(int I, el_t& OldNum)
+{
+  if(I > Count || I < 1)
+    throw OutOfRange();
+  else if(I == 1)
+    {
+      deleteFront(OldNum);
+    }
+  else if(I == Count)
+    {
+      deleteRear(OldNum);
+    }
+  else
+    {
+      Node *P;
+      P = Front;
+      for(int k=1; k<I-1; k++)
+        {
+	  P = P->Next; //making P pints to I-1 th node
+        }
+      Node *Q;
+      Q = P->Next;  //Q points to Ith Node
+      OldNum = Q->Elem; //return the removed element
+      Q = Q->Next;       //Q points to I+1 Node
+      delete P->Next;     // delete Ith node
+      P->Next = Q;        //P next points to Q (I+1th)
+      Count--;
+    }
+}
+
+//PURPOSE: Error cases: If I is an illegal value (i.e. > Count+1 or < 1) throw an exception.
+//Special cases: this should simply call addFront (I == 1) or addRear (I == Count+1) for some cases.
+//Regular case:  will add right before the Ith node.  Count is updated.
+//PARAMETER: newNum: is the element that is added to the Ith node
+void llist::insertIth(int I, el_t newNum)
+{
+  if(I > Count+1 || I <= 0)
+    throw OutOfRange();
+  else if(I == 1)
+    {
+      addFront(newNum);
+    }
+  else if(I == Count+1)
+    {
+      addRear(newNum);
+    }
+  else
+    {
+      Node *P;
+      P = Front;
+      for(int k=1; k<I-1; k++)
+        {
+	  P = P->Next;
+        }
+      Node *Q;
+      Q = P->Next;
+        
+      P->Next = new Node;
+      P = P->Next;
+      P->Elem = newNum;
+      P->Next = Q;
+      Count++;
+    }
+}
+
+//PURPOSE: Allow passing of a list by value and returning of a list by value
+//PARAMETER: original object 
+llist::llist(const llist& Original)
+{
+  Node *P;
+  Front = NULL; Rear = NULL; Count = 0;
+  P = Original.Front;
+  while(P != NULL)
+    {
+      this->addRear(P->Elem);
+      P = P->Next;
+    }
+}
+
+//PURPOSE: Allow one object gets another object in the client: Allow L1 = L2 in the client
+//PARAMETER: OtherOne: is the object that gives elements to the other object
+llist& llist::operator=(const llist& OtherOne)
+{
+  if (&OtherOne != this)  // if not the same
+    {
+      el_t num;
+      // this-> object has to be emptied first.
+      while (! this->isEmpty() )
+	this->deleteRear(num);
+      // this-> object has to be built up by allocating new cells with OtherOne elements (**)
+      Node* P;  // local pointer for OtherOne
+      P = OtherOne.Front;
+      while (P != NULL)  // a loop which repeats until you reach the end of OtherOne.
+        {
+	  this->addRear(P->Elem);    //P’s element is added to this->
+	  P = P->Next;                         // Go to the next node in OtherOne
+        }
+    }// end of if
+  return *this;    // return the result unconditionally.  Note that the result is returned by reference.
+
+}

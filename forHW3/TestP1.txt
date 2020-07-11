@@ -1,0 +1,127 @@
+Script started on Fri 12 Oct 2018 09:10:59 PM PDT
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW3[?1034h[alshu002@empress forHW3]$ ex/cs/recordhw TestS.t g++ HW3P2client.cpp slist.cpp llist.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs slist.h[ g++ HW3P2client.cpp slist.cpp llist.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P/cs/recordhw TestS.texit[Kex[Kg++ HW3P1client.cpp llist.cpp
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW3[alshu002@empress forHW3]$ ./a.out
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+    Enter ( 0 ) to quit 
+===>1
+CASE 1: Basic --------------- 
+Step 1
+It is empty
+Step 2
+[ Empty ]
+Step 3
+Step 4
+[ 1 2 3 4 ] 4 elemnts
+Step 5
+1
+2
+Step 6
+[ 3 4 ] 2 elemnts
+Step 7
+It is not empty
+Step 8
+4
+3
+Step 9
+It is empty
+calling the llist destructor
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+    Enter ( 0 ) to quit 
+===>2
+Case 2: Insert and Delete ------------
+Step 1
+Step 2
+[ 5 6 8 9 ] 4 elemnts
+Step 3
+Step 4
+Step 5
+Step 6
+error (out of range)
+Step 7
+error (out of range)
+Step 8
+[ 4 5 6 7 8 9 10 ] 7 elemnts
+Step 9
+removed 4
+Step 10
+removed 10
+Step 11
+removed 7
+Step 12
+error (out of range)
+Step 13
+error (out of range)
+Step 14
+[ 5 6 8 9 ] 4 elemnts
+Step 15
+9 8 6 5 
+Step 16
+[ Empty ]
+Step 17
+error (out of range)
+Step 18
+error (underflow)
+Step 19
+error (out of range)
+Step 20
+error (underflow)
+calling the llist destructor
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+    Enter ( 0 ) to quit 
+===>3
+Case 3: Copy Constructor and = -------
+Step 1
+Step 2
+in copy test
+[ 1 2 3 4 5 6 ] 6 elemnts
+finished
+calling the llist destructor
+-- After copytest --- 
+Step 3
+[ 1 2 3 4 5 ] 5 elemnts
+-- Testing operator overloading ---
+Step 4
+Step 5
+[ 1 2 3 4 5 ] 5 elemnts
+Step 6
+Step 7
+[ 7 8 9 10 ] 4 elemnts
+Step 8
+Step 9
+[ 1 2 3 4 5 ] 5 elemnts
+Step 10
+Step 11
+[ 1 2 3 4 ] 4 elemnts
+Step 12
+[ 1 2 3 4 ] 4 elemnts
+Step 13
+[ 1 2 3 4 5 ] 5 elemnts
+calling the llist destructor
+calling the llist destructor
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+    Enter ( 0 ) to quit 
+===>0
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW3[alshu002@empress forHW3]$ exit
+exit
+
+Script done on Fri 12 Oct 2018 09:11:45 PM PDT

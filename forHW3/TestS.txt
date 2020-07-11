@@ -1,0 +1,36 @@
+Script started on Fri 12 Oct 2018 08:44:02 PM PDT
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW3[?1034h[alshu002@empress forHW3]$ emacs partition.cp[12P./a.oug++ partition.cp[2@emacs[C[C[C[C[C[C[C[C[C[C[C[C[C[[2Pg++[C[C[C[C[C[C[C[C[C[C[C[C[C[[10P./a.ouemacs partition.cp[Kemacs partition.cp[12P./a.ouemacs partition.cp[Kemacs partition.cp[K g++ HW3P2client.cpp slist.cpp llist.cpp
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW3[alshu002@empress forHW3]$ ./a.out
+Step 1
+Step 2
+Step 3
+[ 4 6 7 8 ] 4 elemnts
+Step 4
+Found 6 in location 2
+Step 5
+Step 6
+[ 4 0 7 8 ] 4 elemnts
+Step 7
+Found 8 in location 4
+Step 8
+Step 9
+[ 4 0 7 2 ] 4 elemnts
+Step 10
+not Found
+Step 11
+ERROR: Bad position was given
+calling the llist destructor
+---- First Part testing done ----- 
+true
+false
+false
+true
+false
+false
+false
+calling the llist destructor
+calling the llist destructor
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW3[alshu002@empress forHW3]$ exit
+exit
+
+Script done on Fri 12 Oct 2018 08:44:55 PM PDT
