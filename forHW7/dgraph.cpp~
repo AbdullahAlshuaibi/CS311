@@ -1,0 +1,116 @@
+//CS311 Yoshii dgraph.cpp 
+// INSTRUCTION:
+//  Complete all the functions you listed in dgraph.h
+//  Comment the file completely using How to Comment file.
+//  Use HW6-help.docx to finish the functions.
+//-------------------------------------------------------
+
+//======================================================
+// HW#: HW6 dgraph
+// Name: Abdullah Alshuaibi
+// File Type: implemntation file
+//========================================================
+
+using namespace std;
+#include <iostream>
+#include "dgraph.h"
+#include <fstream>
+
+dgraph::dgraph() // initialize vertexName (blank) and visit numbers (0) initialize countUsed to be 0
+{
+  for(int i =0; i<9; i++)
+    {
+      Gtable[i].vertexName = ' ';
+      Gtable[i].visit =0;
+      
+    }
+  countUsed = 0;
+}
+
+dgraph::~dgraph()   // do we have to delete all nodes of slists in table??
+// Question: If we do not do this, will the llist destructor be called automatically??? Try it.
+{
+  //  llist destructor is called automatically
+}
+void dgraph::fillTable()  // be sure to read from a file
+{
+  ifstream fin;
+
+  fin.open("table.txt");
+
+  for(int i=0; i<9; i++)
+    {
+      fin>>Gtable[i].vertexName;
+      fin>>Gtable[i].outDegree;
+      int outD = Gtable[i].outDegree;
+      for(int ii=0; ii<outD; ii++)
+	{
+	  char adj;
+	  fin>>adj;
+	  Gtable[i].adjacentOnes.addRear(adj);
+	}
+    }
+}
+void dgraph::displayGraph() // be sure to display
+// in a really nice format -- all columns
+{
+  for(int i=0; i<9; i++)
+    {
+      cout<<Gtable[i].vertexName<<" ";
+      cout<<Gtable[i].outDegree<<" ";
+      cout<<Gtable[i].visit<<" ";
+      Gtable[i].adjacentOnes.displayAll();
+    }
+}
+int dgraph::findOutDegree(char V)// throws exception
+// does not use a loop
+{
+  int iV = (int)V - 65;
+  
+  if(iV >= 0 && iV < 9 )
+    return Gtable[iV].outDegree;
+ 
+  else
+     throw BadVertex();
+
+}
+slist dgraph::findAdjacency(char V)// throws exception
+// does not use a loop
+{
+  int iV = (int)V - 65;
+  
+  if(iV >=0 && iV < 9 )
+    return Gtable[iV].adjacentOnes;
+  
+  else	
+    throw BadVertex();
+}
+
+void dgraph::visit(int I, char V)
+{
+  if(isMarked(V))
+    {
+      cout<<V<<" had been visited already - backup."<<endl;
+    }
+  else
+    {
+      int iV = (int)V - 65;
+      Gtable[iV].visit = I;
+      if(Gtable[iV].adjacentOnes.isEmpty())
+	cout<<"Deadend reached - backup."<<endl;
+      else
+	cout<<"Visit "<<V<<" as "<<I<<endl;
+    }
+
+}
+
+bool dgraph::isMarked(char V)
+{
+  int iV = (int)V - 65;
+ 
+  if(Gtable[iV].visit != 0)
+    return true;
+  
+  else
+    return false;
+}

@@ -1,0 +1,70 @@
+//==========================================
+// HW#: HW7 DFS client using dgraph.h
+// Name: Abdullah Alshuaibi
+// File type: client hw7client.cpp 
+//==========================================
+
+// Be sure to include dgraph, slist and stack
+
+// This client uses the dgraph class and stack class
+// to do depth first traversal of the graph stored in table.txt
+#include <iostream>
+#include "dgraph.h"
+#include "stack.h"
+#include <stdlib.h>
+
+int main()
+{
+  // use the algorithm (read carefully) in the HW7
+  // assignment sheet
+  slist ll;  // llist object 
+  dgraph G;
+  G.fillTable();
+  G.displayGraph();
+
+  stack S;
+  S.push('A');
+
+  int i =1; //visit number
+  while(S.isEmpty() == false)
+    {
+      char V;
+      S.pop(V);
+      cout<<"Removed "<<V<<" from stack"<<endl; 
+      int iV = (int)V - 65;
+      ll = G.findAdjacency(V);
+      if(G.isMarked(V) == false) //vertext has been visited yet
+	{
+	  G.visit(i,V);
+	  cout<<"Visit "<<V<<" as "<<i<<endl;
+	  
+	  if(ll.isEmpty()) 
+	    cout<<"Deadend reached - backup."<<endl; 
+
+	  else
+	    { cout<<"...pushing ";
+	      ll.displayAll();
+					      
+	      char SV;
+	      while(ll.isEmpty() == false)
+		{
+		  ll.deleteRear(SV);
+		  S.push(SV);
+		}
+	    }
+	  i++;
+	}
+
+      else
+	{
+	  cout<<V<<" had been visited already - backup."<<endl;
+	} 
+
+      cout<<"Stack is:"<<endl;
+      S.displayAll();
+    
+    }
+  cout<<"-------------------"<<endl<<"  Out Visit Adj"<<endl<<"-------------------"<<endl;
+  G.displayGraph();
+
+}
