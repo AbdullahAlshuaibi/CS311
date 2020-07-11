@@ -1,0 +1,16 @@
+
+HW2 INSTRUCTIONS:
+
+Run my demo programs first and observe the results.
+
+All you need is one client file with the required function AND main.
+
+Must complete the ** parts of: 
+  binsearch.cpp
+  partition.cpp
+  combine.cpp
+
+Do not forget the required comments.
+
+Do not create header and implementation files.
+

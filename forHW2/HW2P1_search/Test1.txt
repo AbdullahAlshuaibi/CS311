@@ -1,0 +1,47 @@
+Script started on Thu 20 Sep 2018 01:30:50 PM PDT
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[?1034h[alshu002@empress HW2P1_search]$ emacs binsearch.cplscd HW2P1_searclscd forHWlscd HWProgramlscd CS311Proglscd cs311lsemacs binarySearch.c[2Pg++[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@emacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pg++[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++: error: binarySearch.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ g++ binarySearch.c[1Pemacs binsearch.cplscd HW2P1_searclscd forHWlscd HWProgramlscd CS311Proglscd cs311lsemacs binarySearch.c[2Pg++[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@emacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clscd cs311lscd CS311Proglscd HWProgramlscd forHWlscd HW2P1_searclsemacs binsearch.cpg++ binarySearch.c[K./a.out
+What do you want to look for? 1
+comparing against an element in slot 4
+comparing against an element in slot 1
+Found it in position 1
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ ./a.out
+What do you want to look for? 19
+comparing against an element in slot 4
+comparing against an element in slot 7
+comparing against an element in slot 8
+Found it in position 10
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ ./a.out
+What do you want to look for? 5
+comparing against an element in slot 4
+comparing against an element in slot 1
+Found it in position 3
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ ./a.out
+What do you want to look for? 17
+comparing against an element in slot 4
+comparing against an element in slot 7
+Found it in position 9
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ ./a.out
+What do you want to look for? 21
+comparing against an element in slot 4
+comparing against an element in slot 7
+comparing against an element in slot 8
+Element not found
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ ./a.out
+What do you want to look for? 0
+comparing against an element in slot 4
+comparing against an element in slot 1
+Element not found
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ ./a.out
+What do you want to look for? 6
+comparing against an element in slot 4
+comparing against an element in slot 1
+comparing against an element in slot 2
+Element not found
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P1_search[alshu002@empress HW2P1_search]$ exit
+exit
+
+Script done on Thu 20 Sep 2018 01:32:03 PM PDT

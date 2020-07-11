@@ -1,0 +1,80 @@
+Script started on Sat 29 Sep 2018 05:53:28 PM PDT
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P2_sort[?1034h[alshu002@empress HW2P2_sort]$ ex/cs/recordhw Tesexit[Kex/cs/recordhw Tesemacs partition.cp[1P/cs/recordhw Tes[1Pg++ partition.cplsg++ partition.cpp
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P2_sort[alshu002@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 7
+Enter elements one per line..
+1
+2
+3
+4
+5
+6
+7
+Ok the pivot is 1
+the left pointer is the 0 slot pointing to number 1
+the right pointer is the -1 slot pointing to number 0
+Results...
+1|234567
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P2_sort[alshu002@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 8
+Enter elements one per line..
+8
+7
+6
+5
+4
+3
+2
+1
+Ok the pivot is 8
+the left pointer is the 7 slot pointing to number 8
+the right pointer is the 6 slot pointing to number 2
+Results...
+1765432|8
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P2_sort[alshu002@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 8
+Enter elements one per line..
+5
+1
+4
+3
+6
+7
+8
+2
+Ok the pivot is 5
+the left pointer is the 4 slot pointing to number 6
+the right pointer is the 3 slot pointing to number 3
+Results...
+2143|6785
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P2_sort[alshu002@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 6
+Enter elements one per line..
+4
+3
+1
+2
+7
+5
+Ok the pivot is 4
+the left pointer is the 3 slot pointing to number 4
+the right pointer is the 2 slot pointing to number 1
+Results...
+231|475
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P2_sort[alshu002@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 5
+Enter elements one per line..
+2
+6
+4
+1
+7
+Ok the pivot is 2
+the left pointer is the 1 slot pointing to number 6
+the right pointer is the 0 slot pointing to number 1
+Results...
+1|6427
+]0;alshu002@empress:~/cs311RY/CS311Progs/HWPrograms/forHW2/HW2P2_sort[alshu002@empress HW2P2_sort]$ exit
+exit
+
+Script done on Sat 29 Sep 2018 05:54:42 PM PDT
